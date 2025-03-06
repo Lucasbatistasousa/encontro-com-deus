@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+/*font-family: "League Spartan", serif;*/
+
+/*CABEÇALHO*/
+header {
+    background-color: #011b5d;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(#269AFF, #011b5d );
+}
+
+.logo img{
+    width: 140px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.link-cabecalho {
+    padding: 10px;
+    align-items: center;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+.link-cabecalho:hover{
+    color: #269AFF;
+}
+
+.contato-header {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entrar-contato, .entrar-contato-header, button {
+    background-color: #e6cf00;
+    color: #011b5d;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px #050505;
+}
+
+.entrar-contato:hover, .entrar-contato-header:hover, button:hover{
+    background-color: #269AFF;
+    color: #f1f1f1;
+    transition: 0.3s;
+}
+
+/*SOBRE O ENCONTRO*/
+.call-to-action {
+    background-image: url(assets/chacaramontesiao.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 35vh;
+    margin: auto;
+}
+
+.div-cta {
+    width: 50%;
+    margin: 0 30px;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+h2 {
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.sobre-encontro {
+    text-align: center;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.texto-foto-encontro {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    width: 900px;
+    margin: 50px auto;
+}
+
+.div-entrar-em-contato-cta {
+    width: 200px;
+    margin: 30px;
+}
+
+.foto-encontro {
+    width: 500px;
+}
+
+.paragrafo-sobre-encontro {
+    font-size: 22px;
+}
+
+/*DEPOIMENTOS*/
+.depoimentos {
+    background-color: #050505;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(#011b5d, #050505);
+}
+
+.depoimentos-pessoas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.depoimento-fcb {
+    width: 300px;
+}
+
+.video-testemunho {
+    margin: 30px;
+}
+
+.depoimentos-pessoas {
+    text-align: center;
+}
+
+/*PEDIDOS DE ORAÇÃO*/
+.pedidos-de-oração {
+    padding: 40px;
+    background-color: #f1f1f1;
+}
+
+.texto-botao {
+    width: 400px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.formulario-botao {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+form {
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px  #0505055d;
+}
+
+input {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #269AFF;
+    padding-left: 5px;
+    outline-color: #011b5d;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #269AFF;
+    padding-left: 5px;
+    outline-color: #011b5d; 
+}
+
+/*VENHA NOS CONHECER*/
+.nos-visite {
+    padding: 40px;
+    text-align: center;  
+}
+
+.nos-conheca {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.celulas {
+    width: 400px;
+}
+
+.cultos {
+    width: 400px;
+}
+
+/*RODAPÉ*/
+footer {
+    background-color: #011b5d;
+    padding: 40px;
+    background: linear-gradient(#011b5d,#269AFF );
+}
+
+#siga-nos-redes-sociais {
+    color: #f1f1f1;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.redes-sociais {
+    width: 30px;
+    margin: 0px 10px;
+}
+
+.redes-sociais-logo {
+    width: 100px;
+}
+
+.div-footer {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#copy {
+    color: #f1f1f1;
+}
+
+@media (max-width: 900px) {
+    nav {
+        display: none;
+    }
+
+    .div-cta {
+        width: 80%;
+        text-align: center;
+    }
+
+    .div-entrar-em-contato-cta {
+        margin: 30px auto;
+    }
+
+    .foto-encontro {
+        width: 350px;
+    }
+
+    .texto-foto-encontro {
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .depoimentos-pessoas {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .formulario-botao {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .texto-botao {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .nos-conheca {
+        flex-direction: column;
+    }
+
+    .celulas {
+        width: 80%;
+        margin: 0 auto 30px;
+    }
+
+    .cultos {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .div-footer {
+        gap: 50px;
+    }
+
+    .redes-sociais-gw {
+        text-align: center;
+    }
+
+    .redes-sociais-ms {
+        text-align: center;
+    }
+}
