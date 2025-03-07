@@ -5,6 +5,10 @@
     font-family: "Roboto", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*font-family: "League Spartan", serif;*/
 
 /*CABEÇALHO*/
@@ -15,6 +19,10 @@ header {
     justify-content: space-around;
     align-items: center;
     background: linear-gradient(#269AFF, #011b5d );
+}
+
+#menu-button {
+    display: none;
 }
 
 .logo img{
@@ -65,6 +73,17 @@ nav {
     background-color: #269AFF;
     color: #f1f1f1;
     transition: 0.3s;
+}
+
+.voltar-topo {
+    position: fixed;
+    height: 50px;
+    bottom: 30px;
+    right: 30px;
+}
+
+.voltar-topo  img{
+    height: 50px;
 }
 
 /*SOBRE O ENCONTRO*/
@@ -249,8 +268,40 @@ footer {
 }
 
 @media (max-width: 900px) {
+    header {
+        justify-content: space-between;
+    }
+
     nav {
         display: none;
+        width: 40%;
+        flex-direction: column;
+        position: absolute;
+        top: 8%;
+        flex-direction: column;
+        background-color: #f1f1f1;
+        padding-left: 10px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #011b5d;
+    }
+
+    .link-cabecalho {
+        color: #011b5d;
+    }
+
+    #menu-button {
+        display: block;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #f1f1f1;
+        cursor: pointer;
     }
 
     .div-cta {
